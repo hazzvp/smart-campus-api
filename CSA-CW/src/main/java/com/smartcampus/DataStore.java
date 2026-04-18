@@ -4,6 +4,14 @@
  */
 package com.smartcampus;
 
+import com.smartcampus.model.Room;
+import com.smartcampus.model.Sensor;
+import com.smartcampus.model.SensorReading;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /**
  *
  * @author Hasandi Vihanga
