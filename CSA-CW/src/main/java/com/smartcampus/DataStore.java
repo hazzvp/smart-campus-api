@@ -18,7 +18,7 @@ import java.util.Map;
  */
 public class DataStore {
     public static final Map<String, Room> rooms = new HashMap<>();
-    public static final Map<String, Sensor> sensor = new HashMap<>();
+    public static final Map<String, Sensor> sensors = new HashMap<>();
     public static final Map<String, List<SensorReading>> readings = new HashMap<>();
     
     static{
@@ -29,8 +29,8 @@ public class DataStore {
         
         Sensor s1 = new Sensor("TEMP-001", "Temperature", "Active", 22.5, "LIB-301");
         Sensor s2 = new Sensor("CO2-001", "CO2", "Active", 400.0, "LAB-101");
-        sensor.put(s1.getId(), s1);
-        sensor.put(s2.getId(), s2);
+        sensors.put(s1.getId(), s1);
+        sensors.put(s2.getId(), s2);
         
         r1.getSensorIds().add(s1.getId());
         r2.getSensorIds().add(s2.getId());
