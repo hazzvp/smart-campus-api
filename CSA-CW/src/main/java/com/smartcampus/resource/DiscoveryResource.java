@@ -15,7 +15,7 @@ import java.util.Map;
  *
  * @author Hasandi Vihanga
  */
-@Path("/")
+@Path("/info")
 public class DiscoveryResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
