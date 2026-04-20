@@ -20,11 +20,15 @@ import java.util.logging.Logger;
 public class LoggingFilter implements ContainerRequestFilter, ContainerResponseFilter{
     
     
-    private static final Logger LOGGER = Logger.getLoger(LoggingFilter.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(LoggingFilter.class.getName());
     
     @Override
     public void filter(ContainerRequestContext requestContext)throws IOException{
-        LOGGER.info("[REQUEST] " + requestContext.getMethod() + " " +
-                requestContext.getUriInfo().getRequestUri());
+        LOGGER.info("[REQUEST] " + requestContext.getMethod() + " " + requestContext.getUriInfo().getRequestUri());
+    }
+    
+    @Override
+    public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext) throws IOException{
+        LOGGER.info("[RESPONSE] " + requestContext.getMethod() + " " + requestContext.getUriInfo().getRequestUri() + " -> Status: " + responseContext.getStatus());
     }
 }
