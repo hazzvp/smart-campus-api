@@ -74,7 +74,7 @@ public class SensorReadingResource {
            
         }
         readingsList.add(newReading);
-        sensor.setCurrentValue(reading.getTimeStamp());
+        sensor.setCurrentValue(newReading.getValue());
         
         return Response
                 .status(Response.Status.CREATED)
