@@ -57,7 +57,7 @@ curl -X POST http://localhost:8080/api/v1/sensors/TEMP-001/readings \
 ### 6. Try invalid roomId (422)
 curl -X POST http://localhost:8080/api/v1/sensors \
   -H "Content-Type: application/json" \
-  -d '{"id":"X","type":"CO2","status":"ACTIVE","currentValue":0,"roomId":"FAKE"}'
+  -d '{"id":"TEMP-999","type":"CO2","status":"ACTIVE","currentValue":0.0,"roomId":"FAKE-999"}'
 
 ### 7. Delete room with sensors (409)
 curl -X DELETE http://localhost:8080/api/v1/rooms/LIB-301
