@@ -13,7 +13,7 @@ HashMaps for data storage.
 
 ## How to Build and Run
 1. Clone the repository:
-   git clone https://github.com/YOUR_USERNAME/smart-campus-api.git
+   git clone https://github.com/hazzvp/smart-campus-api.git
 2. Open NetBeans → File → Open Project → select CSA-CW folder
 3. Right-click project → Build with Dependencies
 4. Right-click Main.java → Run File
